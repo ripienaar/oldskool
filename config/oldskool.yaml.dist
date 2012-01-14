@@ -1,0 +1,21 @@
+---
+:google_api_key: YOUR_API_KEY
+:keywords:
+- :type: :gcse
+  :cx: YOUR_SEARCH_ENGINE
+  :keywords:
+  - g
+  - :default
+- :type: :url
+  :url: http://amazon.co.uk/exec/obidos/search-handle-url/index=books-uk&field-keywords=%Q%
+  :keywords:
+  - book
+  - books
+- :type: :url
+  :url: http://maps.google.co.uk/maps?q=%Q%
+  :keywords:
+  - map
+  - gmuk
+  - gmap
+- :type: :password
+  :keywords: pass
