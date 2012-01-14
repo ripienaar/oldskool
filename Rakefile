@@ -16,6 +16,7 @@ spec = Gem::Specification::new do |spec|
   spec.has_rdoc = false
   spec.test_files = nil
   spec.add_dependency 'sinatra'
+  spec.add_dependency 'bundler'
 
   spec.extensions.push(*[])
 
