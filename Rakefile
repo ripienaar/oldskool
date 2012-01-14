@@ -17,6 +17,7 @@ spec = Gem::Specification::new do |spec|
   spec.test_files = nil
   spec.add_dependency 'sinatra'
   spec.add_dependency 'bundler'
+  spec.add_dependency 'httparty'
 
   spec.extensions.push(*[])
 

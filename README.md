@@ -105,3 +105,17 @@ to just run it under Passenger now else you can easily test it using _rackup_
     $ bundle exec rackup -o 0 -p 4567
 
 This will start up a webserver on port _4567_ on your machine that you can browse to
+
+Installing Plugins?
+-------------------
+
+There are some plugins already - see the oldskool-gcse and oldskool-password ones in my GitHub account -
+to install those simply add them to the _Gemfile_ of your site as in the example above and update the bundle.
+
+To tie the new plugins to keywords you should edit the config file of your site, what to add to it depends
+on the specific plugin - see the individual plugin documentation for details.
+
+Contact?
+--------
+
+R.I.Pienaar / rip@devco.net / @ripienaar / http://devco.net/
