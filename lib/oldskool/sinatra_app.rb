@@ -43,9 +43,11 @@ module Oldskool
       if params[:q]
         @result = @router.route(params)
 
-        @sidemenu = @result.delete(:sidemenu)
-        @topmenu = @result.delete(:topmenu)
-        @error = @result.delete(:error)
+        if @result
+          @sidemenu = @result.delete(:sidemenu)
+          @topmenu = @result.delete(:topmenu)
+          @error = @result.delete(:error)
+        end
 
         case (template = @result[:template])
           when :redirect
