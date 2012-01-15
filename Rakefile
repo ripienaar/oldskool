@@ -1,9 +1,13 @@
 require 'rubygems'
 require 'rake/gempackagetask'
 
+$: << File.expand_path("../lib", __FILE__)
+
+require 'oldskool/version'
+
 spec = Gem::Specification::new do |spec|
   spec.name = "oldskool"
-  spec.version = "0.0.1"
+  spec.version = Oldskool::VERSION
   spec.platform = Gem::Platform::RUBY
   spec.summary = "oldskool"
   spec.description = "description: Pluggable web command line"

@@ -20,10 +20,23 @@ module Oldskool
       include Rack::Utils
 
       alias_method :h, :escape_html
+
+      def base_url
+        "#{request.env['rack.url_scheme']}://#{request.env['HTTP_HOST']}"
+      end
+
+      def search_url
+        "#{base_url}/do"
+      end
     end
 
     get '/' do
       erb :index
+    end
+
+    get '/opensearch.xml' do
+      content_type 'application/opensearchdescription+xml', :charset => 'utf-8'
+      erb :opensearch_xml, :layout => false
     end
 
     get '/do' do
