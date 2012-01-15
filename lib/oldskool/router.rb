@@ -12,7 +12,7 @@ module Oldskool
       defaulting = false
 
       k = ""
-      q = params[:q]
+      q = params[:q].strip
 
       if params[:q] =~ /^(\w+?)(\s.+)*$/
         k = $1
