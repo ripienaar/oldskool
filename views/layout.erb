@@ -17,7 +17,7 @@
             <% end %>
           </ul>
           <% end %>
-          <form action="/do" method="get" class="pull-right"><input name="q" type="text" placeholder="#" /></form>
+          <form action="/do" method="get" class="pull-right"><input name="q" type="text" placeholder="#" value="<%= params[:q] == nil ? "" : h(params[:q]) %>"/></form>
         </div>
       </div>
     </div>
