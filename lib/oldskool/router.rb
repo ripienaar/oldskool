@@ -39,7 +39,7 @@ module Oldskool
 
       handler_class = "%sHandler" % [handler[:type].to_s.capitalize]
 
-      if Oldskool.constants.include?(handler_class)
+      if Oldskool.constants.map{|k| k.to_s}.include?(handler_class)
         if defaulting
           Oldskool.const_get(handler_class).new(params, handler, @config).handle_request("", params[:q])
         else
