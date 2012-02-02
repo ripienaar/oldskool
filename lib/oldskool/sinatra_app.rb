@@ -41,6 +41,8 @@ module Oldskool
 
     get '/do' do
       if params[:q]
+        params[:http_request] = request
+
         @result = @router.route(params)
 
         if @result
