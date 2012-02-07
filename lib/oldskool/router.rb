@@ -15,7 +15,7 @@ module Oldskool
       q = params[:q].strip
 
       if params[:q] =~ /^(\w+?)(\s.+)*$/
-        k = $1
+        k = $1.downcase
         q = $2.strip rescue ""
       end
 
