@@ -31,7 +31,7 @@
         <% end %>
           <form action="/do" method="get" class="navbar-form navbar-right" role="search">
             <div class="form-group">
-              <input type="text" class="form-control" name="q" autofocus="autofocus" placeholder="#">
+              <input type="text" class="form-control" name="q" autofocus="autofocus" placeholder="#" value="<%= params[:q] == nil ? "" : h(params[:q]) %>">
             </div>
           </form>
         </div>
